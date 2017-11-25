@@ -7,25 +7,22 @@
     android:background="@drawable/google"
     tools:context="com.example.debjit.signup.MainActivity">
 
-        <com.alexzh.circleimageview.CircleImageView
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/imageView"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="404dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:clickable="true"
+            android:layout_marginTop="8dp"
             android:src="@drawable/image"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:view_backgroundColor="@color/colorPrimary"
-            app:view_shadowDx="2dp"
-            app:view_shadowDy="0dp"
-            app:view_shadowRadius="4dp"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002" />
 
         <EditText
             android:id="@+id/email"
