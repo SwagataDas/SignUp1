@@ -47,7 +47,6 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
     private int PICK_IMAGE_REQUEST = 1;
     private int IMAGE_CAPTURE = 1;
     Integer REQUEST_CAMERA = 1, SELECT_FILE = 0;
-    ImageView imageView;
     private String userChoosenTask;
 
     //@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -197,7 +196,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             e.printStackTrace();
         }
 
-        imageView.setImageBitmap(thumbnail);
+        imageView1.setImageBitmap(thumbnail);
     }
 
     @SuppressWarnings("deprecation")
@@ -212,7 +211,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             }
         }
 
-        imageView.setImageBitmap(bm);
+        imageView1.setImageBitmap(bm);
     }
 
 
