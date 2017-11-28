@@ -197,7 +197,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             e.printStackTrace();
         }
 
-        imageView.setImageBitmap(thumbnail);
+        imageView1.setImageBitmap(thumbnail);
     }
 
     @SuppressWarnings("deprecation")
@@ -212,7 +212,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             }
         }
 
-        imageView.setImageBitmap(bm);
+        imageView1.setImageBitmap(bm);
     }
 
 
