@@ -43,6 +43,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
     ImageView imageView1;
     EditText dob, firstname, lastname, emailid;
     DatePickerDialog datePickerDialog;
+    private int mYear, mMonth, mDay;
     private AwesomeValidation awesomeValidation;
     private int PICK_IMAGE_REQUEST = 1;
     private int IMAGE_CAPTURE = 1;
@@ -58,6 +59,8 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
         signupButton = (Button) findViewById(R.id.signup);
         //email validation
+        awesomeValidation.addValidation(this, R.id.firstname, "^[A-Za-z\\s]{1,}[\\.]{0,1}[A-Za-z\\s]{0,}$", R.string.nameerror);
+        awesomeValidation.addValidation(this, R.id.lastname, "^[A-Za-z\\s]{1,}[\\.]{0,1}[A-Za-z\\s]{0,}$", R.string.nameerror);
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
         awesomeValidation.addValidation(this, R.id.email, Patterns.EMAIL_ADDRESS, R.string.emailerror);
 
