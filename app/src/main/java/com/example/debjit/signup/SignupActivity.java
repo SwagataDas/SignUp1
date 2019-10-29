@@ -48,7 +48,6 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
     private int PICK_IMAGE_REQUEST = 1;
     private int IMAGE_CAPTURE = 1;
     Integer REQUEST_CAMERA = 1, SELECT_FILE = 0;
-    ImageView imageView;
     private String userChoosenTask;
 
     //@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
